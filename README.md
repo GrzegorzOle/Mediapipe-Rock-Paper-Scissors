@@ -1,24 +1,89 @@
-# ✋ Rock Paper Scissors Game (Hand Gesture Recognition)
+# ✋ Rock Paper Scissors Game – Hand Gesture Recognition
 
-This Python project uses **OpenCV** and **MediaPipe** to implement a real-time "Rock Paper Scissors" game using hand gestures captured from your webcam.
+This Python project uses your webcam and [MediaPipe](https://google.github.io/mediapipe/) + OpenCV to recognize hand gestures and play a real-time Rock-Paper-Scissors game.
+
+---
+
+## 📦 Requirements
+
+Python 3.8+ and the following libraries:
+
+```bash
+pip install opencv-python mediapipe
+```
+
+Optional (recommended): create a virtual environment:
+
+```bash
+python -m venv .venv
+
+# Activate it:
+# On Windows:
+.venv\Scripts\activate
+
+# On macOS/Linux:
+source .venv/bin/activate
+```
+
+---
+
+## ▶️ How to Run the Game
+
+After downloading this project and installing dependencies:
+
+```bash
+python game.py
+```
+
+Make sure your **webcam is connected and not in use** by other apps.
+
+---
+
+## 🎮 Game Controls
+
+- Press `n` → Start **new round**
+- Press `q` → **Quit** the game
+
+---
+
+## ✋ Gestures Detected
+
+- ✊ **Rock** – All fingers folded
+- ✋ **Paper** – All fingers extended
+- ✌️ **Scissors** – Only index + middle fingers extended
+
+---
 
 ## 🧠 How It Works
 
-- The camera captures real-time video.
-- MediaPipe detects and tracks up to 2 hands.
-- Gestures are recognized as:
-  - ✊ `Rock`: All fingers folded.
-  - ✋ `Paper`: All fingers extended.
-  - ✌️ `Scissors`: Only index and middle fingers extended.
-- After a countdown, the game freezes the gestures and shows the winner.
+- Uses MediaPipe Hands for hand detection and classification
+- Uses OpenCV to show video and draw hand landmarks
+- 5-second countdown before gesture evaluation
+- Detects both hands and shows gesture + game result
 
-## ▶️ How to Run
+---
 
-1. **Clone or download** this repository.
-2. Make sure you have **Python 3.8+** installed.
-3. Create a virtual environment (optional but recommended):
+## 📸 Tips for Better Detection
 
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate       # On Linux/macOS
-   .venv\\Scripts\\activate        # On Windows
+- Keep both hands **clearly in frame**
+- Ensure **good lighting** and camera focus
+- Don’t move hands during the countdown
+- Avoid overlap between hands
+
+---
+
+## 🔄 Reinstall or Repair
+
+If gesture detection fails or GUI doesn’t display, try:
+
+```bash
+pip uninstall opencv-python mediapipe
+pip install opencv-python mediapipe
+```
+
+---
+
+## 📄 License
+
+MIT License © 2025  
+Rock Paper Scissors using OpenCV + MediaPipe
