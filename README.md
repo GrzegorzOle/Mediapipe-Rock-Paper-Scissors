@@ -61,6 +61,8 @@ Make sure your **webcam is connected and not in use** by other apps.
 - 5-second countdown before gesture evaluation
 - Detects both hands and shows gesture + game result
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/90BWIiX7B3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ---
 
 ## 📸 Tips for Better Detection
